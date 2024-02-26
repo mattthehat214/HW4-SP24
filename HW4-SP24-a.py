@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 
+# Matthew's section
 # First up, our protagonists - the mean (mu) and standard deviation (sigma) of our normal distributions.
 mu_1, sigma_1 = 0, 1  # For the standard normal distribution (a perfect bell, so to speak).
 mu_2, sigma_2 = 175, 3  # For the not-so-standard one (more like a bell with a higher pitch).
@@ -19,10 +20,12 @@ pdf_2 = stats.norm.pdf(x_2, mu_2, sigma_2)
 cdf_1 = stats.norm.cdf(x_1, mu_1, sigma_1)
 cdf_2 = stats.norm.cdf(x_2, mu_2, sigma_2)
 
+#Jose's section with Matthew comments
 # Now for the critical moment - calculating the probabilities for our specific conditions.
 prob_1 = stats.norm.cdf(1, mu_1, sigma_1)  # The chance of being less than 1 in our standard tale.
 prob_2 = 1 - stats.norm.cdf(mu_2 + 2*sigma_2, mu_2, sigma_2)  # The chance of exceeding μ + 2σ in our unique story.
 
+#Matthew's functions
 # Let's get visual - first, the standard normal distribution.
 plt.figure(figsize=(10, 8))
 
