@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.linalg import solve
 
+# Matthew's section
 def solve_matrix_equations():
     """
     It's matrix time! Like a math magician, we're about to pull the solution out of our
@@ -28,7 +29,7 @@ def solve_matrix_equations():
     solution2 = solve(A2, b2)
 
     return solution1, solution2
-
+# Jose and Matthew's functions
 # Let's solve the matrix equations and print out the solutions all nice and tidy.
 solution1, solution2 = solve_matrix_equations()
 
