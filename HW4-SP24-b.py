@@ -2,6 +2,7 @@ import numpy as np
 from scipy.optimize import fsolve
 import matplotlib.pyplot as plt
 
+# Comments and functions from both
 def func1(x):
     """
     Like a smooth dance step, this function takes `x` and gracefully subtracts
@@ -27,7 +28,7 @@ def func2(x):
         float: The party trick at point `x`.
     """
     return np.cos(2 * x) * x**3
-
+# Jose's section
 def find_roots():
     """
     Here's where we play hide and seek with the roots. We'll ask fsolve to 
@@ -40,6 +41,7 @@ def find_roots():
     root2 = fsolve(func2, 1.0)  # Ditto for this one.
     return root1, root2
 
+# Matthew's section
 def plot_functions():
     """
     Grab your virtual paint and canvas! This function draws our mathematical 
@@ -56,6 +58,7 @@ def plot_functions():
     plt.grid(True)  # It's the graph paper background for our masterpiece.
     plt.show()  # Show it off to the world!
 
+# Jose and Matthew developed the following sections and functions 
 def find_intersections():
     """
     It's not just about the journey, but also where paths cross. This function 
